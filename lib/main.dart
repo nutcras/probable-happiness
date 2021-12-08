@@ -28,9 +28,9 @@ class TabBarDemo extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              FirstScreen(),
-              SecondScreen(),
-              ThirdScreen(),
+              FirstScreen(), //อันนี้หน้า1
+              SecondScreen(), //อันนี้หน้า2
+              ThirdScreen(), //อันนี้หน้า3
             ],
           ),
         ),

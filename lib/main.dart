@@ -19,7 +19,7 @@ class TabBarDemo extends StatelessWidget {
           appBar: AppBar(
             bottom: const TabBar(
               tabs: [
-                Tab(icon: Icon(Icons.directions_car)),
+                Tab(icon: Icon(Icons.account_circle)),
                 Tab(icon: Icon(Icons.directions_transit)),
                 Tab(icon: Icon(Icons.directions_bike)),
               ],
@@ -28,7 +28,7 @@ class TabBarDemo extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              FirstScreen(), //อันนี้หน้า1
+              LoginPage(), //อันนี้หน้า1
               SecondScreen(), //อันนี้หน้า2
               ThirdScreen(), //อันนี้หน้า3
             ],

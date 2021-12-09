@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import './app_screen/first_screen.dart';
-import './app_screen/second_screen.dart';
-import './app_screen/third_screen.dart';
+import 'app_screen/login_page.dart';
 
 void main() {
   runApp(const TabBarDemo());
@@ -13,28 +11,7 @@ class TabBarDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DefaultTabController(
-        length: 3,
-        child: Scaffold(
-          appBar: AppBar(
-            bottom: const TabBar(
-              tabs: [
-                Tab(icon: Icon(Icons.account_circle)),
-                Tab(icon: Icon(Icons.directions_transit)),
-                Tab(icon: Icon(Icons.directions_bike)),
-              ],
-            ),
-            title: const Text('Tabs Demo'),
-          ),
-          body: TabBarView(
-            children: [
-              LoginPage(), //อันนี้หน้า1
-              SecondScreen(), //อันนี้หน้า2
-              ThirdScreen(), //อันนี้หน้า3
-            ],
-          ),
-        ),
-      ),
+      home: LoginPage(),
     );
   }
 }

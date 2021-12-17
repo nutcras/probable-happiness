@@ -12,6 +12,7 @@ class TabBarDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: LoginPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
